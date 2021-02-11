@@ -1,0 +1,30 @@
+body{
+	margin: 0 auto;
+	background-color: #87CEFA;
+}
+.denglu1{
+	background: url(../img/denglu/denglubc.jpg) no-repeat;
+	width: 524px;
+	height: 786px;
+	margin: 0 auto;
+	text-align: center;
+}
+.denglu1_1{
+	padding-top: 120px;
+	
+}
+.denglu1_2{
+	margin-top: 100px;
+	width: 524x;
+	height: 200px;
+	/* background-color: red; */
+	font-size: larger;
+	color: white;
+}
+.denglu1_2 input{
+	height: 20px;
+}
+	
+#pwd{
+	margin-top: 20px;
+}

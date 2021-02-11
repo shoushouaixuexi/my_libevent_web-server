@@ -1,0 +1,23 @@
+body{
+	width: 485px;
+	margin: 0 auto;
+	text-align: center;
+}
+.zc1{
+	width: 480px;
+	height: 348px;
+	margin: 0 auto;
+	/* background-color: red; */
+	margin-top: 60px;
+	border: 1px dashed lightblue;
+}
+	
+input[type="text"] ,input[type="password"],input[type="email"]  {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    color: #50a3a2;
+	margin-top: 2px;
+}
+ input[type="button"]{
+	margin-right: 8px;
+ }

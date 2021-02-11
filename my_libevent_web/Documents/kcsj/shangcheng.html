@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>宠物商城</title>
+		<link rel="stylesheet" type="text/css" href="css/shangcheng.css"/>
+		<script type="text/javascript">
+			// var sum_0 =document.getElementsByName("sl");
+				
+			// for(var j=0;j<7;j++){
+			//  	sum_0[j].value =parseInt(0);
+			// }
+			var sum=0;
+			var n=0;
+			// $(document).ready(function(){
+			// 	var cart=new Array();
+			// 	$(".add-to-cart").click(function(){					
+			// 		console.log($(this).siblings(".price"));
+			// 	})
+			// })
+			function jian(num0){
+				var sum0 =document.getElementsByName("sl");
+				if(sum0[num0].value == 0){
+					alert("不能再减少了！");
+				}
+				else{
+					sum0[num0].value--;
+					document.getElementById("n_sum").value--;
+					n--;
+					var sum1 =document.getElementsByName("huowu");
+					sum-=parseInt(sum1[num0].value);
+				}
+			}
+			function jia(num0){
+				var sum0 =document.getElementsByName("sl");
+				sum0[num0].value++;
+				n++;
+				document.getElementById("n_sum").value++;
+				var sum1 =document.getElementsByName("huowu");
+				sum+=parseInt(sum1[num0].value);
+			}
+			function tianjia(num){
+				var sum1 =document.getElementsByName("huowu");
+				sum+=parseInt(sum1[num].value);
+				n++;
+				document.getElementById("n_sum").value = n;
+			}
+			function jiesuan(){
+				alert("合计："+sum);
+			}
+			function danger(){
+				alert("sorry,your permissions are insufficient!");
+			}
+		</script>
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+		
+	</head>
+	<body>
+		<!-- 第一块 -->
+		<div class="d1">
+			<div class="d11">
+				<div class="d111">
+					<span>欢迎大家来到宠物小精灵网</span>
+					<a href="denglu.html">请登录</a>
+					<a href="zhuce.html">请注册</a>
+				</div>
+				<div class="d112">
+					<a href="">开始旅行</a>
+					<a href="">我的精灵</a>
+					<a href="">新手引导</a>
+				</div>
+			</div>
+		</div>
+		<!-- 第二块 -->
+		<div class="d2">
+			<div class="d21">
+				<div class="d211">
+					<img src="img/tubiao.jpg" alt="宠物小精灵网">
+				</div>
+				<div class="d212">
+					<div class="d2121">
+						<div class="d21211">
+							<input type="text" id="" value="" placeholder="搜索你要的宝可梦">
+						</div>
+						<div class="d21212">
+							
+						</div>
+					</div>
+					<div class="d2122">
+						<span>热门比较：</span>
+						<a href="">超梦</a>
+						<a href="">皮卡丘</a>
+						<a href="">喵喵</a>
+						<a href="">杰尼龟</a>
+						<a href="">伊布</a>
+						<a href="">月精灵</a>
+						<a href="">水精灵</a>
+						<a href="">差不多娃娃</a>
+						<a href="">七夕青鸟</a>
+						<a href="">粉红蛋</a>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 第三块 -->
+		<div class="d3">
+			<div class="d31">
+				<div class="menud3">
+					<a href="index.html" class="menu">首页</a>						 
+				</div>
+				<div class="menud3">
+					<a href="" class="menu">萌宠</a>
+				</div>
+				<div class="menud3">
+					<a href="" class="menu">战力宠</a>
+				</div>
+				<div class="menud3">
+					<a href="" class="menu">道馆宠</a>
+				</div>
+				<div class="menud3">
+					<a href="" class="menu">神宠</a>
+				</div>
+				<div class="menud3">
+					<a href="#" class="menu">传说宠</a>
+				</div>
+				<div style="float:left;width: 137px;height: 40px;line-height: 40px;">
+					<a href="" style="font-size: 14px; font-weight: normal;
+					    color: #ffffff; width: 117px;line-height: 40px; padding-left: 20px;
+					    display: inline-block;">宠物商城
+					</a>
+				</div>
+				<div style="float: right;width: 137px;line-height: 40px;">
+					<a href="" style="font-size: 14px; font-weight: normal;
+					    color: #ffffff; width: 117px;height: 40px; padding-left: 20px;
+					    display: inline-block;">宝可梦大全
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--第四块-->
+		<div class="buy_0">
+			<div class="buy">
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<a href="" style="color: rgb(221, 69, 69); margin: 0px 5px; " title="集齐九元素召唤神宠">￥????</a>
+					</span>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 0px;height: 0px;">
+					<input type="text" name="huowu" value="????" style="width: 0;height: 0;">
+					<input type="button" onclick="danger()" value="加入购物车">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥1008</span>
+					</span>
+					<button onclick="jian(1)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(1)">+</button>
+					<input type="text" name="huowu" value="1008" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(1)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥1653</span>
+					</span>
+					<button onclick="jian(2)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(2)">+</button>
+					<input type="text" name="huowu" value="1653" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(2)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥2048</span>
+					</span>
+					<button onclick="jian(3)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(3)">+</button>
+					<input type="text" name="huowu" value="2048" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(3)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥1203</span>
+					</span>
+					<button onclick="jian(4)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(4)">+</button>
+					<input type="text" name="huowu" value="1203" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(4)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥456</span>
+					</span>
+					<button onclick="jian(5)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(5)">+</button>
+					<input type="text" name="huowu" value="456" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(5)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥12</span>
+					</span>
+					<button onclick="jian(6)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(6)">+</button>
+					<input type="text" name="huowu" value="12" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(6)" class="add-to-cart">
+				</div>
+				<div class="buy_1">
+					<img src="img/shangpin/1.jpg">
+					<span style="text-align: left;width: 60px;float: left;">
+						<span class="price" style="color: rgb(221, 69, 69); margin: 0px 5px;">￥1234</span>
+					</span>
+					<button onclick="jian(7)">-</button>
+					<input type="text" name="sl" value="0" style=" text-align: center; float: left;width: 40px;height: 20px;">
+					<button onclick="jia(7)">+</button>
+					<input type="text" name="huowu" value="1234" style="width: 0;height: 0;">
+					<input type="button" value="加入购物车" onclick="tianjia(7)" class="add-to-cart">
+				</div>
+				<div class="join">
+					<a href=""><img src="img/shangpin/2.png" title="点击进入购物车"></a>
+					<input id="n_sum" value="0" style="width: 8px;height: 10px;position: absolute;border: 0;color: red;">
+					<button type="button" onclick="jiesuan()">结算</button>
+				</div>
+			</div>
+		</div>
+		<!-- <script>
+			var sum=0
+			// $(document).ready(function(){
+			// 	var cart=new Array();
+			// 	$(".add-to-cart").click(function(){					
+			// 		console.log($(this).siblings(".price"));
+			// 	})
+			// })
+			function tianjia(num){
+				var a=document.getElementByName("huowu");
+				s+ =a[0].value;
+			}
+			function jiesuan(){
+				alert("haha");
+			}
+		</script> -->
+	</body>
+</html>

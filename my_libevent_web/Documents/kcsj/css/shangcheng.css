@@ -1,0 +1,215 @@
+html{
+	margin-bottom: 0px;
+}
+body{
+	text-align: center;
+	font: normal 12px/22px Arial, Verdana, Lucida, Helvetica, simsun, sans-serif;
+}
+td,div{
+	Color: #5A5A5A;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+ul,ol,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.d1{
+	height: 27px;
+	background-color: #f7f7f7;
+}
+
+.d11{
+	height: 27px;
+	width: 994px;
+	margin: 0 auto;
+}
+
+.d111{
+	width: 360px;
+	height: 27px;
+	float: left;
+	line-height: 27px;
+	font-size: 14px;
+	
+}
+
+.d111 a{
+	color: #5A5A5A;
+	text-decoration: none;
+}
+.d111 a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.d112{
+	width: 360px;
+	height: 27px;
+	float: right;
+	line-height: 27px;
+	font-size: 14px;
+}
+
+.d112 a{
+	color: #5A5A5A;
+	text-decoration: none;
+	float: right;
+	padding: 0 20px 0 10px;
+}
+
+.d112 a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.d2{
+	height: 100px;
+}
+
+.d21{
+	height: 100px;
+	width: 994px;
+	margin: 0 auto;
+}
+
+.d211{
+	width: 410px;
+	height: 74px;
+	float: left;
+	padding-top: 15px;
+}
+
+.d212{
+	float: right;
+	height: 72px;
+	width: 580px;
+	
+	padding-top: 20px;
+}
+
+.d2121{
+	width: 580px;
+	height: 38px;
+	
+	float: left;
+	margin-top: 10px;
+}
+
+.d2122{
+	width: 580px;
+	height: 22px;
+	text-align: left;
+	float: right;
+	
+}
+.d2122 a{
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+}
+.d21211{
+	width: 496px;
+	height: 34px;
+	line-height: 38px;
+	font-size: 14px;
+	border: solid 2px #ff9000;
+	float:left;
+}
+.d21211 input{
+	height: 28px;
+	width: 498px;
+	border: none;
+	line-height: 34px; 
+}
+
+.d21212{
+	width: 80px;
+	height: 38px;
+	float: right;
+	border: none;
+	background: url(../img/2.gif) no-repeat center #FF9000;
+}
+
+
+.d3{
+	
+	height: 41px;
+	background-color: #FF9000;
+}
+.menu{
+	color: #ffffff;
+}
+.menud3{
+	float: left;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+.menud3 a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.d31{
+	margin: 0 auto;
+	width: 994px;
+	height: 40px;
+	/* background-color: #FF0000; */
+}
+/* 第四块 */
+.buy_0{
+	background-color: rgb(245, 245, 245);
+	width: auto;
+	height:405px ;
+}
+.buy{
+	width: 1008px;
+	height: 405px;
+	margin: 0 auto;
+}
+.buy_1{
+	width: 250px;
+	height: 200px;
+	/* background-color: #F08080; */
+	border: 1px solid #87CEFA;
+	float: left;
+	font-size: 18px;
+}
+.buy_1 span{
+	width: 60px;
+}
+.buy_1 input{
+	width: 80px;
+	height: 30px;
+	float: right;
+	border-radius: 5px;
+	/* background-color: #FF0000; */
+}
+.buy_1 button{
+	/* width: 20px;
+	height: 20px; */
+	float: left;
+	text-align: left;
+}
+.join{
+	width: 1008px;
+	height: 50px;
+	/* background-color: red; */
+	position: absolute;
+	top: 589px;
+}
+.join img{
+	width:40px;
+	
+}
+.join span{
+	position: absolute;
+	color: red;
+}
+.join button{
+	margin: 0 10px;
+}
