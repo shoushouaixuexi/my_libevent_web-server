@@ -6,3 +6,5 @@
 
 #libevent
 基于libevent的web服务器，简单的实现了对浏览器的资源请求处理以及html页面的发送等过程，使用方法清阅读
+文档：libevent
+链接：http://note.youdao.com/noteshare?id=447e46c4724db5ce6407993490655bdd  查看一些我的笔记以及安装说明
